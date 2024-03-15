@@ -9,6 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <a class="navigation-logo" href="#"><img class="page-header-logo" src="#" alt="">Логотип города седона</a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -20,25 +21,34 @@
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item navigation-user">
-            <a class="navigation-link" href="#"><span class="visually-hidden"></span>Поиск</a>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-search" href="#"><span
+                class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden"></span>Избранное</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-favorite" href="#"><span
+                class="visually-hidden">Избранное</span>
+              <span class="notification-badge">12</span>
+            </a>
+
           </li>
-          <li class="navigation-item">
-            <button class="navigation-link">
-              <span class="visually-hidden"></span>Хочу сюда
-            </button>
-          </li>
+
         </ul>
       </nav>
+      <a class="header-button" href="#search">Хочу сюда!</a>
     </header>
     <main class="main-index">
-      <img class="logo" src="#" alt="логитип города Седона" />
-      <h1>Седона - небольшой городок, заслуживающий большего!</h1>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="hero">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="#" alt="Горы">
+        <img src="#" alt="Welcome to the gorgeous Sedona,beacause the Grand Canyon sucks">
+
+      </section>
+      <section>
+        <h1>Седона - небольшой городок, заслуживающий большего!</h1>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
 
       <section class="town">
         <h2 class="visually-hidden">плюсы города</h2>
@@ -109,25 +119,78 @@
       </section>
 
 
-        <section class="town-link">
-          <ul>
-            <li>
-          <h2 class="link-title">заинтересовались?</h2>
-        </li>
-        <li>
-          <span class="link-description">Укажите предлогаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне</span>
+      <section class="town-link">
+        <h2 class="link-title">заинтересовались?</h2>
+        <ul>
+
+          <li class="town-link-item">
+            <span class="link-description">Укажите предлогаемые даты поездки, и мы покажем вам лучшие
+              предложения гостиниц в Седоне</span>
           </li>
-          <li>
+          <li class="town-link-item">
             <button class="town-button">поиск гостиницы в седоне</button>
           </li>
-          </ul>
-        </section>
-        <section>
+        </ul>
+      </section>
+      <section class="btn">
+        <h2 class="btn-title">подпишитесь на рассылку</h2>
+        <ul class="btn-list">
+          <li class="btn-item">
+            <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
+          </li>
 
-        </section>
+
+
+
+
+
+
+
+        </ul>
+        <form class="townform" action="send.php" method="post">
+          <input type="text" name="email" placeholder="ваш e-mail">
+          <input type="submit" value="подписаться">
+        </form>
+
+
+      </section>
 
     </main>
+
+    <footer class="page-footer">
+      <section class="footer-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <h2 class="contacts-telefon">+7(812)812-12-12</h2>
+      </footer>
+
+
+
+
   </body>
 
 </html>
